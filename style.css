@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #ddd;
+}
+@font-face {
+  font-family: consolas;
+  src: url(static/Inconsolata-Medium.ttf);
+}
+@font-face {
+  font-family: vazirmatn;
+  src: url(vazirmatn-master/vazirmatn-master/fonts/ttf/Vazirmatn-Black.ttf);
+}
+@font-face {
+  font-family: vazirmatnlight;
+  src: url(vazirmatn-master/vazirmatn-master/fonts/ttf/Vazirmatn-Light.ttf);
+}
+@font-face {
+  font-family: vazirmatnmedium;
+  src: url(vazirmatn-master/vazirmatn-master/fonts/ttf/Vazirmatn-Medium.ttf);
+}
+body {
+  font-family: vazirmatn, "Segoe UI", sans-serif;
+}
+header {
+  background-color: rgb(19, 31, 42);
+}
+/* ******* */
+/* navbar styles */
+/* ******* */
+.nav-logo {
+  font-size: 33px;
+}
+.green {
+  color: #04aa6d;
+}
+.navbar-row {
+  background-color: rgb(19, 31, 42);
+  display: flex;
+  padding: 0 40px;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  gap: 80px;
+  list-style: none;
+}
+.nav-item {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.nav-item:hover {
+  color: #04aa6d;
+}
+.login-section {
+  padding: 7px 18px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  gap: 4px;
+}
+.login-section:hover,
+.login-section:hover a {
+  color: #04aa6d;
+}
+.login-section:hover,
+.login-mobile:hover {
+  border: 2px solid #04aa6d;
+}
+.socialmedia {
+  font-size: 23px;
+  display: flex;
+  gap: 15px;
+}
+.icon-link-nav {
+  font-size: 23px;
+  margin-top: 5px;
+}
+.icon-link-nav:hover,
+.socialmedia :hover {
+  color: #04aa6d;
+}
+/* *********** */
+/* dropdown --> click on amoozesh */
+/* *********** */
+.dropdown-content {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  height: 85vh;
+  right: 0;
+  top: 100%;
+  background-color: rgb(21, 32, 43);
+  transition: all 500ms;
+}
+.drop-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+.drop-explanation {
+  color: #ddd;
+  font-family: vazirmatnlight;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+}
+.drop-explanation p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+.dropdown-link a {
+  color: #ddd;
+}
+.drop-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 550px;
+}
+.drop-section img {
+  width: 200px;
+  height: 200px;
+}
+.start-learning {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: vazirmatn;
+  font-size: 14px;
+  padding-top: 30px;
+}
+.start-learning-btn {
+  padding: 8px 25px;
+  border-radius: 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.start-learning-html {
+  background-color: rgb(234, 95, 14);
+}
+.start-learning-html:hover {
+  background-color: #ddd;
+  color: rgb(234, 95, 14);
+}
+.start-learning-css {
+  background-color: rgb(58, 104, 220);
+}
+.start-learning-css:hover {
+  background-color: #ddd;
+  color: rgb(58, 104, 220);
+}
+.start-learning-js {
+  background-color: rgb(255, 206, 44);
+  color: #000;
+}
+.start-learning-js:hover {
+  background-color: #000;
+  color: rgb(255, 206, 44);
+}
+.start-learning-react {
+  background-color: rgb(14, 230, 234);
+  color: #000;
+}
+.start-learning-react:hover {
+  background-color: #000;
+  color: rgb(14, 230, 234);
+}
+.word {
+  font-size: 24px;
+}
+.html-word {
+  color: rgb(234, 95, 14);
+}
+.css-word {
+  color: rgb(76, 121, 235);
+}
+.js-word {
+  color: rgb(255, 206, 44);
+}
+.react-word {
+  color: rgb(14, 230, 234);
+}
+/* ************ */
+/* banner header section */
+/* ************ */
+.banner-main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 120px;
+  height: 80vh;
+}
+.banner-img {
+  width: 540px;
+  padding-top: 30px;
+}
+.banner-text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 4rem;
+}
+.banner-headline {
+  color: #ddd;
+  font-size: 48px;
+}
+.banner-text-first {
+  font-size: 22px;
+  font-family: vazirmatnlight;
+  color: #fff4a3;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.search-box {
+  width: 500px;
+  background-color: #fff;
+  display: flex;
+  position: relative;
+}
+
+.search-link {
+  align-self: center;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+}
+.fa-magnifying-glass {
+  padding: 20px;
+  font-size: 18px;
+  color: #04aa6d;
+}
+.banner-input {
+  border: none;
+  text-align: center;
+  width: 545px;
+  height: 48px;
+  padding: 14px;
+  font-size: 16px;
+  font-family: vazirmatnlight;
+}
+.banner-input:focus {
+  outline: none;
+}
+.banner-text-second {
+  text-decoration: underline;
+  font-size: 18px;
+  font-family: vazirmatnlight;
+}
+.banner-text-first i {
+  font-size: 32px;
+}
+.banner-text-second:hover {
+  color: #04aa6d;
+}
+
+/* 3 sections styles HTML/CSS/JS with codeeditor  */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.sections a {
+  border-radius: 25px;
+  width: 200px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+}
+.sections p {
+  font-size: 22px;
+}
+.html-section {
+  background-color: #d9eee1;
+  margin-top: -165px;
+  padding-bottom: 100px;
+}
+.css-section {
+  background-color: #96d4d4;
+}
+.js-section {
+  background-color: rgb(13, 23, 33);
+}
+.css-section,
+.js-section {
+  padding: 40px 0 70px 0;
+}
+.js-section h2,
+.js-section p {
+  color: #ddd;
+}
+.section-explanation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.section-explanation img {
+  width: 170px;
+}
+.html-section h2,
+.css-section h2,
+.js-section h2 {
+  font-size: 45px;
+  letter-spacing: 1.5px;
+}
+
+.html-section a,
+.css-section a,
+.js-section a {
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.learning-link {
+  background-color: #009866;
+}
+.headline-link {
+  background-color: #ffc0c7;
+  color: #000 !important;
+}
+.codeeditor-link {
+  background-color: rgb(40, 42, 53);
+}
+.explanation-links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+  font-family: vazirmatnmedium;
+}
+.code-editor {
+  background-color: #38444d;
+  height: 490px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.code-editor h4 {
+  color: #ddd;
+  font-size: 22px;
+  padding: 15px 0;
+}
+.code-editor-content {
+  background-color: rgb(21, 32, 43);
+  border-radius: 5px;
+  height: 320px;
+  width: 410px;
+  padding: 15px;
+  font-family: consolas;
+  font-size: 16px;
+  color: #ddd;
+  line-height: 1.5;
+}
+.code-editor-btn {
+  background-color: #009866;
+  margin: 20px 0;
+}
+.code-editor-btn:hover {
+  background-color: rgba(0, 112, 74, 0.64);
+  color: #ffffff;
+  transition: 0.2s ease-in-out;
+}
+
+/* vvvvvvv (footer styles) vvvvvv */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 70px 0 30px;
+  background-color: rgb(40, 42, 53);
+  color: #d2d2d2ea;
+}
+footer p,
+footer a {
+  font-family: vazirmatnlight;
+  color: #d2d2d2ea;
+  font-family: vazirmatnlight;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #04aa6d;
+}
+footer h3,
+footer h6 {
+  font-size: 26px;
+}
+
+.first-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.first-col-footer {
+  width: 350px;
+}
+.footer-socialmedia {
+  display: flex;
+  gap: 18px;
+  font-size: 24px;
+  padding-top: 16px;
+}
+.col-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 12px;
+}
+/* display styles for briefing*/
+.d-none {
+  opacity: 0;
+  visibility: hidden;
+}
+.d-flex {
+  display: flex;
+}

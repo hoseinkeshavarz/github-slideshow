@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>آکادمی فرانت - آموزش برنامه نویسی وب</title>
+    <meta name="description" content="آموزش برنامه نویسی وب با آکادمی فرانت" />
+    <meta
+      name="keywords"
+      content="برنامه نویسی, آموزش وب, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="Hosein Keshavarz" />
+    <!-- اطلاعات ارتباطی -->
+    <meta name="robots" content="index, follow" />
+    <!-- تصویر بنر برای اشتراک گذاری در شبکه‌های اجتماعی -->
+    <meta property="og:image" content="آدرس تصویر بنر" />
+    <!-- (بعدا پر شود) لینک کانونیکال برای اطمینان از هماهنگی نسخه‌های مختلف یک صفحه -->
+    <link rel="canonical" href="آدرس صفحه" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="img/graduation-cap-solid(2).png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/a34818c787.css"
+      crossorigin="anonymous"
+    />
+    <!-- استایل‌ها -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar-row">
+        <div class="nav-logo">
+          <h3 class="green">
+            <i class="fa-solid fa-graduation-cap"></i>
+            آکادمی فرانت
+          </h3>
+        </div>
+        <ul class="navbar">
+          <li><a href="#" class="nav-item">خانه</a></li>
+          <div class="dropdown">
+            <li>
+              <a class="nav-item"
+                >آموزش ها<i class="fa-solid fa-caret-down dropdown-icon"></i
+              ></a>
+            </li>
+            <div class="overlay"></div>
+            <div class="dropdown-content d-none">
+              <div class="drop-row">
+                <div class="drop-section">
+                  <img src="img/html.png" alt="" width="160px" />
+                  <div class="drop-explanation">
+                    <h4 class="html-word word">
+                      <i class="fa-brands fa-html5"></i> HTML
+                    </h4>
+                    <p>
+                      دوره آموزشی HTML با هدف آشنا کردن کامل شما با کدنویسی HTML
+                      به صورت رایگان است. بعد از این دوره یاد خواهید گرفت که
+                      صفحات وب ساده‌ای را ایجاد کنید.
+                    </p>
+                    <div class="start-learning">
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="start-learning-btn start-learning-html"
+                        >یادگیری رو شروع کن !</a
+                      >
+                      <h4>رایگان : )</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-section">
+                  <img src="img/css.png" alt="" width="160px" />
+                  <div class="drop-explanation">
+                    <h4 class="css-word word">
+                      <i class="fa-brands fa-css3-alt"></i> CSS
+                    </h4>
+                    <p>
+                      CSS یا Cascading Style Sheets یک زبان برنامه‌نویسی نیست!‌
+                      پس چیست؟ باید گفت CSS یک زبان استایل‌نویسی‌ست که با
+                      استفاده از آن ‌می‌توانید وبسایت‌های با ظاهر فوق‌ العاده
+                      ایجاد کنید. ما در دوره آموزش CSS سعی داریم که CSS را به
+                      شکل ساده و قدم به قدم و به شکل کامل به شما آموزش دهیم.
+                    </p>
+                    <div class="start-learning">
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="start-learning-btn start-learning-css"
+                        >یادگیری رو شروع کن !</a
+                      >
+                      <h4>رایگان : )</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="drop-row">
+                <div class="drop-section">
+                  <img src="img/javascript.png" alt="" width="160px" />
+                  <div class="drop-explanation">
+                    <h4 class="js-word word">
+                      <i class="fa-brands fa-js"></i> Javascript
+                    </h4>
+                    <p>
+                      جاوا اسکریپت از مهمترین ابزارهای توسعه وب به شمار می‌رود
+                      که در فرایند توسعه سمت کاربر و سرور مورد استفاده قرار
+                      می‌گیرد. آموزش کامل جاوا اسکریپت از شما یک فرد همه فن حریف
+                      خواهد ساخت.
+                    </p>
+                    <div class="start-learning">
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="start-learning-btn start-learning-js"
+                        >یادگیری رو شروع کن !</a
+                      >
+                      <h4>رایگان : )</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="drop-section">
+                  <img src="img/react.png" alt="" width="160px" />
+                  <div class="drop-explanation">
+                    <h4 class="react-word word">
+                      <i class="fa-brands fa-react"></i> React.js
+                    </h4>
+                    <p>
+                      Reactjs به عنوان یک ابزار جاوااسکریپتی با هدف ایجاد
+                      وبسایت‌های SPA شناخته می‌شود در دوره آموزش Reactjs ما سعی
+                      داریم شما را قدم به قدم با این ابزار جذاب آشنا کنیم و به
+                      شما یاد دهیم که چطور می‌توان از React برای ایجاد
+                      وبسایت‌های SPA استفاده کرد.
+                    </p>
+                    <div class="start-learning">
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="start-learning-btn start-learning-react"
+                        >یادگیری رو شروع کن !</a
+                      >
+                      <h4>رایگان : )</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <li>
+            <a href="#" class="nav-item">مسیر یادگیری</a>
+          </li>
+          <li><a href="#" class="nav-item">درباره ما</a></li>
+        </ul>
+        <div class="socialmedia">
+          <a href="#" class="icon-link-nav"
+            ><i class="fa-brands fa-telegram"></i
+          ></a>
+          <a href="#" class="icon-link-nav"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" class="icon-link-nav"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="#" class="icon-link-nav"
+            ><i class="fa-solid fa-cart-shopping basket"></i
+          ></a>
+          <a href="#" class="login-section">
+            ورود | ثبت نام
+            <i class="fa-solid fa-right-to-bracket fa-rotate-180"></i
+          ></a>
+        </div>
+      </nav>
+      <div class="banner-main">
+        <img src="img/2.png" alt="Learning" class="banner-img" />
+
+        <div class="banner-text-section">
+          <h1 class="banner-headline">
+            آموزش طراحی وب با <span class="green">آکادمی فرانت</span>
+          </h1>
+          <p class="banner-text-first">
+            ما اینجا بهت کمک میکنیم تا یک سایتو از صفر تا صد پیاده سازی کنی
+            <i class="fa-regular fa-face-smile-wink"></i>
+          </p>
+          <div class="search-box">
+            <input
+              type="text"
+              placeholder="چی میخوای یاد بگیری ؟ "
+              class="banner-input"
+            />
+            <a href="#" class="search-link">
+              <i class="fa-sharp fa-solid fa-magnifying-glass"></i
+            ></a>
+          </div>
+          <a href="#" class="banner-text-second"
+            >مطمئن نیستی از کجا شروع کنی؟</a
+          >
+        </div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#d9eee1"
+          fill-opacity="1"
+          d="M0,96L80,90.7C160,85,320,75,480,80C640,85,800,107,960,112C1120,117,1280,107,1360,101.3L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+    </header>
+    <main>
+      <div class="sections">
+        <div class="html-section section">
+          <div class="code-editor">
+            <h4>مثالی از زبان HTML</h4>
+            <div class="code-editor-content" dir="ltr">
+              <span class="tagnamecolor" style="color: #ff9999"
+                ><span class="tagcolor" style="color: #88ccbb">&lt;</span
+                >!DOCTYPE<span class="attributecolor" style="color: #c5a5c5">
+                  html</span
+                ><span class="tagcolor" style="color: #88ccbb">&gt;</span></span
+              >
+              <br />
+              <span class="tagnamecolor" style="color: #ff9999"
+                ><span class="tagcolor" style="color: #88ccbb">&lt;</span
+                >html<span class="tagcolor" style="color: #88ccbb"
+                  >&gt;</span
+                ></span
+              ><br />
+              <span class="tagnamecolor" style="color: #ff9999"
+                ><span class="tagcolor" style="color: #88ccbb">&lt;</span
+                >head<span class="tagcolor" style="color: #88ccbb"
+                  >&gt;</span
+                ></span
+              ><br />&nbsp;
+              <span class="tagnamecolor" style="color: #ff9999"
+                ><span class="tagcolor" style="color: #88ccbb">&lt;</span
+                >title<span class="tagcolor" style="color: #88ccbb"
+                  >&gt;</span
+                ></span
+              >HTML Tutorial<span class="tagnamecolor" style="color: #ff9999"
+                ><span class="tagcolor" style="color: #88ccbb">&lt;</span
+                >/title<span class="tagcolor" style="color: #88ccbb"
+                  >&gt;</span
+                ></span
+              ><br />
+              <span class="tagnamecolor" style="color: #ff9999"
+                ><span class="tagcolor" style="color: #88ccbb">&lt;</span
+                >/head<span class="tagcolor" style="color: #88ccbb"
+                  >&gt;</span
+                ></span
+              ><br />
+              <span class="tagnamecolor" style="color: #ff9999"
+                ><span class="tagcolor" style="color: #88ccbb">&lt;</span
+                >body<span class="tagcolor" style="color: #88ccbb"
+                  >&gt;</span
+                ></span
+              ><br /><br />
+              &nbsp;
+              <span class="tagnamecolor" style="color: #ff9999"
+                ><span class="tagcolor" style="color: #88ccbb">&lt;</span
+                >h1<span class="tagcolor" style="color: #88ccbb"
+                  >&gt;</span
+                ></span
+              >This is a Heading<span
+                class="tagnamecolor"
+                style="color: #ff9999"
+                ><span class="tagcolor" style="color: #88ccbb">&lt;</span
+                >/h1<span class="tagcolor" style="color: #88ccbb"
+                  >&gt;</span
+                ></span
+              ><br />
+              &nbsp;
+              <span class="tagnamecolor" style="color: #ff9999"
+                ><span class="tagcolor" style="color: #88ccbb">&lt;</span>p<span
+                  class="tagcolor"
+                  style="color: #88ccbb"
+                  >&gt;</span
+                ></span
+              >This is a Paragraph<span
+                class="tagnamecolor"
+                style="color: #ff9999"
+                ><span class="tagcolor" style="color: #88ccbb">&lt;</span
+                >/p<span class="tagcolor" style="color: #88ccbb"
+                  >&gt;</span
+                ></span
+              ><br /><br />
+              <span class="tagnamecolor" style="color: #ff9999"
+                ><span class="tagcolor" style="color: #88ccbb">&lt;</span
+                >/body<span class="tagcolor" style="color: #88ccbb"
+                  >&gt;</span
+                ></span
+              ><br />
+              <span class="tagnamecolor" style="color: #ff9999"
+                ><span class="tagcolor" style="color: #88ccbb">&lt;</span
+                >/html<span class="tagcolor" style="color: #88ccbb"
+                  >&gt;</span
+                ></span
+              >
+            </div>
+            <a href="#" class="code-editor-btn">خودت امتحان کن </a>
+          </div>
+          <div class="section-explanation">
+            <img src="img/html.png" alt="html-icon" />
+            <h2>HTML</h2>
+            <p>زبان ساخت صفحات وب</p>
+            <div class="explanation-links">
+              <a href="#" class="learning-link">یادگیری</a>
+              <a href="#" class="headline-link">سرفصل ها</a>
+              <a href="#" class="codeeditor-link">ویرایشگر کد </a>
+            </div>
+          </div>
+        </div>
+        <div class="css-section section">
+          <div class="code-editor">
+            <h4>مثالی از زبان CSS</h4>
+            <div class="code-editor-content" dir="ltr">
+              <span class="cssselectorcolor" style="color: #ff9999">
+                body
+                <span class="csspropertycolor" style="color: #fff">{</span
+                ><br />
+                &nbsp;<span class="cssselectorcolor" style="color: #c5a5c5">
+                  background-color</span
+                ><span class="csspropertyvaluecolor" style="color: #88c999"
+                  ><span class="cssdelimitercolor" style="color: #fff">:</span>
+                  lightblue<span class="cssdelimitercolor" style="color: fff"
+                    >;</span
+                  ></span
+                ><br /></span
+              ><span class="cssdelimitercolor" style="color: #fff">}</span
+              ><br /><br />
+              <span class="cssselectorcolor" style="color: #ff9999">h1 </span>
+              <span class="cssdelimitercolor" style="color: #fff">{</span
+              ><span class="csspropertycolor" style="color: #c5a5c5"
+                ><br />
+                &nbsp; color<span
+                  class="csspropertyvaluecolor"
+                  style="color: #88c999"
+                  ><span class="cssdelimitercolor" style="color: #fff">:</span>
+                  white<span class="cssdelimitercolor" style="color: #fff"
+                    >;</span
+                  ></span
+                ><br />
+                &nbsp; text-align<span
+                  class="csspropertyvaluecolor"
+                  style="color: #88c999"
+                  ><span class="cssdelimitercolor" style="color: #fff">:</span>
+                  center<span class="cssdelimitercolor" style="color: #fff"
+                    >;</span
+                  ></span
+                ><br /><br /><span
+                  class="cssselectorcolor"
+                  style="color: #ff9999"
+                >
+                  p
+                  <span class="cssdelimitercolor" style="color: #fff"
+                    >{</span
+                  > </span
+                ><span class="csspropertycolor" style="color: #c5a5c5"
+                  ><br />&nbsp; font-family<span
+                    class="csspropertyvaluecolor"
+                    style="color: #88c999"
+                    ><span class="cssdelimitercolor" style="color: #fff"
+                      >:</span
+                    >
+                    verdana<span class="cssdelimitercolor" style="color: #fff"
+                      >;</span
+                    ></span
+                  ><br /></span
+                ><span class="cssdelimitercolor" style="color: #fff">}</span>
+              </span>
+            </div>
+            <a href="#" class="code-editor-btn">خودت امتحان کن </a>
+          </div>
+
+          <div class="section-explanation">
+            <img src="img/css.png" alt="html-icon" />
+            <h2>CSS</h2>
+            <p>زبان طراحی صفحات وب</p>
+            <div class="explanation-links">
+              <a href="#" class="learning-link">یادگیری</a>
+              <a href="#" class="headline-link">سرفصل ها</a>
+              <a href="#" class="codeeditor-link">ویرایشگر کد </a>
+            </div>
+          </div>
+        </div>
+        <div class="js-section section">
+          <div class="code-editor">
+            <h4>مثالی از زبان JAVASCRIPT</h4>
+            <div class="code-editor-content" dir="ltr">
+              <span class="tagnamecolor" style="color: #ff9999"
+                ><span class="tagcolor" style="color: #88ccbb">&lt;</span
+                >button<span class="attributecolor" style="color: #c5a5c5">
+                  onclick<span
+                    class="attributevaluecolor"
+                    style="color: #88ccbb"
+                    >="myFunction()"</span
+                  ></span
+                ><span class="tagcolor" style="color: #88ccbb">&gt;</span></span
+              >Click<span class="tagnamecolor" style="color: #ff9999"
+                ><span class="tagcolor" style="color: #88ccbb">&lt;</span
+                >/button<span class="tagcolor" style="color: #88ccbb"
+                  >&gt;</span
+                ></span
+              ><br /><br />
+              <span class="tagnamecolor" style="color: #ff9999"
+                ><span class="tagcolor" style="color: #88ccbb">&lt;</span
+                >script<span class="tagcolor" style="color: #88ccbb"
+                  >&gt;</span
+                ></span
+              ><span class="jscolor" style="color: #ddd"
+                ><br />
+                <span class="jskeywordcolor" style="color: #c5a5c5"
+                  >function</span
+                >
+                myFunction() {<br /><span
+                  class="jsnumbercolor"
+                  style="color: #c5a5c5"
+                >
+                </span>
+                &nbsp;
+                <span class="jskeywordcolor" style="color: #c5a5c5">let</span> x
+                = document.<span class="jspropertycolor" style="color: #ddd"
+                  >getElementById</span
+                >(<span class="jsstringcolor" style="color: #88ccbb"
+                  >"demo"</span
+                >);<br /><span class="jsnumbercolor" style="color: #c5a5c5">
+                </span
+                >&nbsp; x.<span class="jspropertycolor" style="color: #ddd"
+                  >style</span
+                >.<span class="jspropertycolor" style="color: #ddd"
+                  >fontSize</span
+                >
+                =
+                <span class="jsstringcolor" style="color: #88ccbb">"25px"</span
+                >; <br /><span class="jsnumbercolor" style="color: #c5a5c5">
+                </span
+                >&nbsp; x.<span class="jspropertycolor" style="color: #ddd"
+                  >style</span
+                >.<span class="jspropertycolor" style="color: #ddd">color</span>
+                =
+                <span class="jsstringcolor" style="color: #88ccbb">"red"</span>;
+                <br />}<br /> </span
+              ><span class="tagnamecolor" style="color: #ff9999"
+                ><span class="tagcolor" style="color: #88ccbb">&lt;</span
+                >/script<span class="tagcolor" style="color: #88ccbb"
+                  >&gt;</span
+                ></span
+              >
+            </div>
+            <a href="#" class="code-editor-btn">خودت امتحان کن </a>
+          </div>
+          <div class="section-explanation">
+            <img src="img/javascript.png" alt="html-icon" />
+            <h2>Javascript</h2>
+            <p>زبان برنامه نویسی صفحات وب</p>
+            <div class="explanation-links">
+              <a href="#" class="learning-link">یادگیری</a>
+              <a href="#" class="headline-link">سرفصل ها</a>
+              <a href="#" class="codeeditor-link">ویرایشگر کد </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="first-row">
+        <div class="first-col-footer">
+          <h3 class="green">
+            <i class="fa-solid fa-graduation-cap"></i>
+            آکادمی فرانت
+          </h3>
+          <p>
+            هدف مجموعه آکادمی فرانت آموزش رایگان و تخصصی در زمینه برنامه نویسی
+            وب و همچنبن ورود دانشجویان به بازار کار تخصصی میباشد.
+          </p>
+          <div class="footer-socialmedia">
+            <a href="#" class="icon-link-nav"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="icon-link-nav"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="#" class="icon-link-nav"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="icon-link-nav"
+              ><i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="second-col-footer col-footer">
+          <h6 class="green">راهنمای سایت</h6>
+          <a href="#">خانه</a>
+          <a href="#">ارتباط با ما</a>
+          <a href="#">ویرایشگر کد</a>
+          <a href="#">خبرنامه</a>
+        </div>
+        <div class="third-col-footer col-footer">
+          <h6 class="green">آموزش ها</h6>
+          <a href="#">Html</a>
+          <a href="#">Css</a>
+          <a href="#">Javascript</a>
+          <a href="#">React</a>
+        </div>
+        <div class="forth-col-footer col-footer">
+          <h6 class="green">سایر بخش ها</h6>
+          <a href="#">ارتباط با ما</a>
+          <a href="#">همکاری با ما</a>
+          <a href="#">قوانین و مقررات</a>
+          <a href="#">نویسندگان سایت</a>
+        </div>
+      </div>
+      <div class="second-row">
+        <p class="copyright">
+          1402&#169; تمامی حقوق برای وبسایت آکادمی فرانت محفوظ است. کپی به هرشکل
+          غیرمجاز و غیرقانونی است.
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/a34818c787.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
